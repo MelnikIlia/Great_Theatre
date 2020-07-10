@@ -99,7 +99,7 @@
   position: absolute;
   top: 15px;
   left: 15px;
-  background-image: url("../img/Hero/Hero_slider-item-back.png");
+  background-image: url("../img/Hero/Hero_slider-item-back.jpg");
   z-index: -1;
 }
 
@@ -259,9 +259,9 @@
   display: block;
   width: 100vw;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.9))), url("../img/Content/Awards_back.png") top center/cover no-repeat;
-  background: -o-linear-gradient(rgba(51, 51, 51, 0.9)), url("../img/Content/Awards_back.png") top center/cover no-repeat;
-  background: linear-gradient(rgba(51, 51, 51, 0.9)), url("../img/Content/Awards_back.png") top center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.9))), url("../img/Content/Awards_back.jpg") top center/cover no-repeat;
+  background: -o-linear-gradient(rgba(51, 51, 51, 0.9)), url("../img/Content/Awards_back.jpg") top center/cover no-repeat;
+  background: linear-gradient(rgba(51, 51, 51, 0.9)), url("../img/Content/Awards_back.jpg") top center/cover no-repeat;
   position: absolute;
   top: 0;
   left: -32px;
