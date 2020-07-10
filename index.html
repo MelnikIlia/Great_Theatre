@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="">
+
+		<script>document.documentElement.classList.remove("no-js");</script>
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<title>Большой Театр</title>
+
+		<!-- Required additional / cdn -->
+
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="lib/Swiper/swiper.min.css"
+		/>
+
+		<!-- Normalize -->
+		<style type="text/css">
+			/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+		</style>
+		
+		<!-- Reset -->
+		<style type="text/css">
+			/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 | License: none (public domain) */a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}a{text-decoration:none}b,strong{font-weight:900}
+		</style>
+		
+		<!-- Fonts -->
+
+		<link
+			type="text/css"
+			rel="preload"
+			as="style"
+			href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
+			onload="this.load=null;this.rel='stylesheet'"
+		/>
+
+		<noscript>
+			<link
+				type="text/css"
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
+			/>
+		</noscript>
+
+		<!-- Critical CSS -->
+		<style>
+			*,::before,::after{-webkit-box-sizing:border-box;box-sizing:border-box}body{font-family:Open Sans Condensed;color:#fff}body.lock{overflow:hidden}.image-wrapper{display:block}.image-wrapper img,.image-wrapper picture{width:100%}.ibg{background-position:center;background-size:cover;background-repeat:no-repeat;position:relative}.ibg>img{width:0;height:0;position:absolute;top:0;left:0;opacity:0;visibility:hidden}.container{width:100%;padding:0 32px;overflow:hidden}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap}.column{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%}.button{-ms-flex-negative:0;flex-shrink:0;display:inline-block;padding:0;border:none;background-color:unset;font-style:normal;font-weight:700;cursor:pointer}.button--primary{padding:15px 47px;color:#fff;background-color:#d1a954;font-size:18px;line-height:25px;text-align:center;letter-spacing:.1em;text-transform:uppercase;-webkit-transition:background-color .3s linear;-o-transition:background-color .3s linear;transition:background-color .3s linear}.button--primary:hover{background-color:#9e7b2e}.button--burger-menu{width:40px;height:40px;position:relative;z-index:1}.button--burger-menu span,.button--burger-menu::after,.button--burger-menu::before{width:26.6px;height:3px;background-color:#fff;position:absolute;left:6.6px;-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;-webkit-transition:-webkit-transform .2s ease;transition:-webkit-transform .2s ease;-o-transition:transform .2s ease;transition:transform .2s ease;transition:transform .2s ease,-webkit-transform .2s ease}.button--burger-menu::after,.button--burger-menu::before{content:"";display:block}.button--burger-menu::before{top:10px}.button--burger-menu span{top:18px;-webkit-transform:scaleX(.77);-ms-transform:scaleX(.77);transform:scaleX(.77)}.button--burger-menu::after{top:27px;-webkit-transform:scaleX(.54);-ms-transform:scaleX(.54);transform:scaleX(.54)}.button--burger-menu:hover span,.button--burger-menu:hover::after{-webkit-transform:scaleX(.99);-ms-transform:scaleX(.99);transform:scaleX(.99)}.button--sidebar-close{width:30px;height:30px;position:absolute;top:30px;right:30px}.button--sidebar-close::after,.button--sidebar-close::before{content:"";display:block;width:16px;height:2px;background-color:#fff;position:absolute;top:8px;left:8px}.button--sidebar-close::before{-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.button--sidebar-close::after{-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}.link{display:inline-block;color:#fff;font-weight:700;font-size:16px;line-height:22px;letter-spacing:.05em;text-transform:uppercase}.link--underlined{position:relative}.link--underlined::after{content:'';display:block;width:100%;height:3px;position:absolute;bottom:-5px;background-color:#d1a954;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);-webkit-transition:-webkit-transform .3s linear;transition:-webkit-transform .3s linear;-o-transition:transform .3s linear;transition:transform .3s linear;transition:transform .3s linear,-webkit-transform .3s linear;z-index:-1}.link--underlined:hover::after{-webkit-transform:translateY(-6px);-ms-transform:translateY(-6px);transform:translateY(-6px)}.subtitle,.title{letter-spacing:.1em;text-transform:uppercase}.title{margin-bottom:60px;font-weight:300;font-size:48px;line-height:65px}.subtitle{margin-bottom:40px;font-weight:700;font-size:21px;line-height:29px}.text{font-size:16px;line-height:22px;color:#fff}.text--gold{color:#d1a954}.header{padding-top:50px;position:fixed;z-index:1;background-color:transparent}.nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.sidebar-menu{height:100vh;width:100%;padding:30px 30px 0 40px;max-width:300px;position:fixed;top:0;left:0;background-color:#333;-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:-webkit-transform .2s ease;transition:-webkit-transform .2s ease;-o-transition:transform .2s ease;transition:transform .2s ease;transition:transform .2s ease,-webkit-transform .2s ease;overflow:hidden;z-index:2}.sidebar-menu.show{overflow-y:auto;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}.hero{padding-top:197px;padding-bottom:107px;position:relative;overflow:hidden}.hero__row{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.hero__title{font-weight:700;font-size:52px;line-height:75px;word-wrap:break-word;margin-bottom:50px}.hero__text{font-size:18px;line-height:22px;letter-spacing:.05em;margin-bottom:50px}.hero::before{content:"";display:block;width:100%;height:100%;position:absolute;top:0;left:0;background:-webkit-gradient(linear,left top,left bottom,from(rgba(51,51,51,.85))),url(img/Hero/Hero_back.jpg) top center/cover no-repeat;background:-o-linear-gradient(rgba(51,51,51,.85)),url(img/Hero/Hero_back.jpg) top center/cover no-repeat;background:linear-gradient(rgba(51,51,51,.85)),url(img/Hero/Hero_back.jpg) top center/cover no-repeat;z-index:-1}.main{background-color:#333;overflow:hidden}.social{width:140px;height:126px;margin:0 auto 140px auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-line-pack:justify;align-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap;text-align:center}.social-item{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%}.social-link:hover .social-icon path{fill:#d1a954}
+		</style>
+
+		<style media="screen and (min-width: 577px)">
+			.container{padding-left:39px;padding-right:39px}.hero{padding-top:252px;padding-bottom:252px}.hero__title{font-size:64px;line-height:87px}
+		</style>
+		
+		<style media="screen and (min-width: 769px)">
+			.container{max-width:69.75806451612904%;padding-left:0;padding-right:0;margin:0 auto 0 19.254032258064516%;overflow:visible}.hero__text{max-width:540px}
+		</style>
+
+		<style media="screen and (min-width: 993px)">
+			.container{max-width:70%;margin:0 auto}.button--burger-menu{display:none}.button--burger-menu{display:none}.header{margin:0;position:absolute;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.button--sidebar-close{display:none}.sidebar-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;max-width:150px;padding:0;background-color:rgba(51,51,51,.75);-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}.social{width:26px;height:auto;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-line-pack:center;align-content:center;margin:0 auto}.social-item{-webkit-box-flex:0;-ms-flex:0;flex:0;margin-bottom:30px}.social-item:last-child{margin-bottom:0}.social-link .social-icon{width:26px;height:26px}.vertical-divider{display:block;width:3px;height:80px;background-color:#c4c4c4;margin-bottom:40px}.contact-info{display:block;width:-webkit-max-content;width:-moz-max-content;width:max-content;font-size:18px;line-height:25px;letter-spacing:.1em;text-transform:uppercase;color:#c4c4c4;-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;-webkit-transform:rotate(-90deg) translate(40px,92px);-ms-transform:rotate(-90deg) translate(40px,92px);transform:rotate(-90deg) translate(40px,92px)}
+		</style>
+		
+		<style media="screen and (min-width: 1281px)">
+			.container{max-width:57.8125%}.hero__row{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.hero__column:first-child{-webkit-box-flex:0;-ms-flex:0 0 48.64864864864865%;flex:0 0 48.64864864864865%}.hero__column:last-child{-webkit-box-flex:0;-ms-flex:0 0 33.33333333333333%;flex:0 0 33.33333333333333%}
+		</style>
+
+		<style media="screen and (max-width: 1280px)">
+			.hero-slider{display:none}.about__image{display:none}
+		</style>
+
+		<style media="screen and (min-height: 702px)">
+			.sidebar-menu{padding-bottom:86px}
+		</style>
+
+		<link
+			type="text/css"
+			rel="preload"
+			as="style"
+			href="css/style.min.css"
+			onload="this.load=null;this.rel='stylesheet'"
+		/>
+
+		<noscript>
+			<link
+				type="text/css"
+				rel="stylesheet"
+				href="css/style.min.css"
+			/>
+		</noscript>
+		
+		<script>
+			/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+			(function(a){if(!a.loadCSS){a.loadCSS=function(){}}var b=loadCSS.relpreload={};b.support=(function(){var d;try{d=a.document.createElement("link").relList.supports("preload")}catch(f){d=false}return function(){return d}})();b.bindMediaToggle=function(e){var f=e.media||"all";function d(){e.media=f}if(e.addEventListener){e.addEventListener("load",d)}else{if(e.attachEvent){e.attachEvent("onload",d)}}setTimeout(function(){e.rel="stylesheet";e.media="only x"});setTimeout(d,3000)};b.poly=function(){if(b.support()){return}var d=a.document.getElementsByTagName("link");for(var e=0;e<d.length;e++){var f=d[e];if(f.rel==="preload"&&f.getAttribute("as")==="style"&&!f.getAttribute("data-loadcss")){f.setAttribute("data-loadcss",true);b.bindMediaToggle(f)}}};if(!b.support()){b.poly();var c=a.setInterval(b.poly,500);if(a.addEventListener){a.addEventListener("load",function(){b.poly();a.clearInterval(c)})}else{if(a.attachEvent){a.attachEvent("onload",function(){b.poly();a.clearInterval(c)})}}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{a.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
+		</script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<header class="header container">
+			<nav class="nav">
+				<button class="button--burger-menu button" id="button-burger"><span></span></button>
+				<a class="link link--underlined" href="tel:+74951234567">+7 495 123-45-67</a>
+			</nav>
+			<!-- /.nav -->
+		</header>
+		
+		<aside class="sidebar-menu">
+			<button class="button--sidebar-close button" id="sidebar-close"></button>
+			<ul class="nav-menu" data-move="nav">
+				<li class="nav-menu__item">
+					<a class="nav__link link" href="#Home">Главная</a>
+				</li>
+				<li class="nav-menu__item">
+					<a class="nav__link link" href="#About">О театре</a>
+				</li>
+				<li class="nav-menu__item">
+					<a class="nav__link link" href="#Production">Наши постановки</a>
+				</li>
+				<li class="nav-menu__item">
+					<a class="nav__link link" href="#Partners">Партнеры театра</a>
+				</li>
+				<li class="nav-menu__item">
+					<a class="nav__link link" href="#Contact">Контакты</a>
+				</li>
+			</ul>
+			<!-- /.nav__list -->
+			<p class="contact-info text">Контактная информация</p>
+			<div class="vertical-divider"></div>
+			<ul class="social">
+				<li class="social-item">
+					<a class="social-link" href="#facebook">
+						<svg class="social-icon"
+							width="27"
+							height="45"
+							viewBox="0 0 27 45"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M25.6747 0.009363L19.4385 0C12.4323 0 7.90463 4.34677 7.90463 11.0746V16.1807H1.63439C1.09257 16.1807 0.653809 16.5917 0.653809 17.0987V24.4969C0.653809 25.0039 1.09307 25.4145 1.63439 25.4145H7.90463V44.0824C7.90463 44.5894 8.34339 45 8.88522 45H17.0661C17.6079 45 18.0467 44.589 18.0467 44.0824V25.4145H25.378C25.9199 25.4145 26.3586 25.0039 26.3586 24.4969L26.3616 17.0987C26.3616 16.8553 26.2581 16.6221 26.0745 16.4499C25.8909 16.2776 25.6407 16.1807 25.3805 16.1807H18.0467V11.8522C18.0467 9.7717 18.5765 8.71555 21.4727 8.71555L25.6737 8.71415C26.215 8.71415 26.6538 8.30311 26.6538 7.79657V0.926937C26.6538 0.420867 26.2155 0.0102993 25.6747 0.009363Z"
+								fill="white" />
+						</svg>
+					</a>
+				</li>
+				<li class="social-item">
+					<a class="social-link" href="#instagram">
+						<svg class="social-icon"
+							width="45"
+							height="45"
+							viewBox="0 0 45 45"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M30.9375 0H14.0625C6.29719 0 0 6.29719 0 14.0625V30.9375C0 38.7028 6.29719 45 14.0625 45H30.9375C38.7028 45 45 38.7028 45 30.9375V14.0625C45 6.29719 38.7028 0 30.9375 0ZM40.7812 30.9375C40.7812 36.3656 36.3656 40.7812 30.9375 40.7812H14.0625C8.63438 40.7812 4.21875 36.3656 4.21875 30.9375V14.0625C4.21875 8.63438 8.63438 4.21875 14.0625 4.21875H30.9375C36.3656 4.21875 40.7812 8.63438 40.7812 14.0625V30.9375Z"
+								fill="white" />
+							<path d="M22.5 11.25C16.2872 11.25 11.25 16.2872 11.25 22.5C11.25 28.7128 16.2872 33.75 22.5 33.75C28.7128 33.75 33.75 28.7128 33.75 22.5C33.75 16.2872 28.7128 11.25 22.5 11.25ZM22.5 29.5312C18.6244 29.5312 15.4688 26.3756 15.4688 22.5C15.4688 18.6216 18.6244 15.4688 22.5 15.4688C26.3756 15.4688 29.5312 18.6216 29.5312 22.5C29.5312 26.3756 26.3756 29.5312 22.5 29.5312Z"
+								fill="white" />
+							<path d="M34.5901 11.9058C35.418 11.9058 36.0892 11.2347 36.0892 10.4067C36.0892 9.57884 35.418 8.90768 34.5901 8.90768C33.7622 8.90768 33.0911 9.57884 33.0911 10.4067C33.0911 11.2347 33.7622 11.9058 34.5901 11.9058Z"
+								fill="white" />
+						</svg>
+					</a>
+				</li>
+				<li class="social-item">
+					<a class="social-link" href="#youtube">
+						<svg class="social-icon"
+							width="45"
+							height="31"
+							viewBox="0 0 45 31"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M35.6541 0H9.34592C4.18431 0 0 4.07352 0 9.09846V21.9015C0 26.9265 4.18431 31 9.34592 31H35.6541C40.8157 31 45 26.9265 45 21.9015V9.09846C45 4.07352 40.8157 0 35.6541 0ZM29.3335 16.1229L17.0283 21.8363C16.7004 21.9886 16.3217 21.7559 16.3217 21.4023V9.61827C16.3217 9.25963 16.7104 9.02719 17.039 9.18931L29.3441 15.2599C29.71 15.4403 29.7036 15.9511 29.3335 16.1229Z"
+								fill="white" />
+						</svg>
+					</a>
+				</li>
+				<li class="social-item">
+					<a class="social-link" href="#vk">
+						<svg class="social-icon"
+							width="45"
+							height="24"
+							viewBox="0 0 45 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M44.7613 21.6746C44.7069 21.5649 44.6561 21.4738 44.6089 21.4009C43.8281 20.0864 42.3361 18.473 40.1338 16.5602L40.0873 16.5164L40.064 16.495L40.0404 16.4729H40.0168C39.0173 15.5823 38.3843 14.9834 38.1192 14.6768C37.6343 14.0927 37.5256 13.5015 37.7907 12.9024C37.9779 12.4498 38.6814 11.494 39.8994 10.0337C40.54 9.25974 41.0474 8.63946 41.4221 8.17214C44.1245 4.81373 45.2961 2.66767 44.9367 1.7331L44.7971 1.5147C44.7033 1.38322 44.4612 1.26294 44.0712 1.15324C43.6802 1.04378 43.1806 1.02567 42.5712 1.09863L35.8237 1.1422C35.7144 1.10599 35.5583 1.10936 35.355 1.15324C35.1518 1.19712 35.0503 1.21914 35.0503 1.21914L34.9328 1.27399L34.8396 1.33988C34.7615 1.38345 34.6756 1.46009 34.5818 1.56963C34.4885 1.67879 34.4104 1.8069 34.348 1.95288C33.6134 3.71961 32.7782 5.36222 31.8408 6.88063C31.2628 7.78605 30.732 8.57073 30.2473 9.23512C29.7632 9.89928 29.3571 10.3886 29.0293 10.7023C28.701 11.0163 28.4048 11.2678 28.1387 11.4578C27.8731 11.6479 27.6703 11.7282 27.5299 11.6988C27.3892 11.6695 27.2567 11.6403 27.1312 11.6112C26.9126 11.4797 26.7369 11.3009 26.6043 11.0746C26.4712 10.8483 26.3816 10.5634 26.3348 10.2203C26.2881 9.87696 26.2606 9.58162 26.2527 9.33331C26.2454 9.0853 26.2488 8.7345 26.2646 8.28191C26.2808 7.82909 26.2881 7.5227 26.2881 7.36207C26.2881 6.80714 26.2997 6.20489 26.3229 5.55514C26.3466 4.9054 26.3657 4.3906 26.3817 4.01134C26.3976 3.63169 26.405 3.23004 26.405 2.80659C26.405 2.38315 26.3774 2.05107 26.3229 1.81004C26.2691 1.56932 26.1865 1.33566 26.0776 1.10913C25.968 0.882837 25.8077 0.707783 25.5973 0.583511C25.3864 0.459393 25.1243 0.360896 24.8124 0.287714C23.9845 0.112583 22.9302 0.0178448 21.6491 0.00311629C18.744 -0.0260339 16.8773 0.149327 16.0495 0.528969C15.7215 0.689372 15.4246 0.908534 15.1593 1.18577C14.878 1.50711 14.8388 1.68247 15.0418 1.71132C15.9791 1.84257 16.6427 2.15654 17.0332 2.65294L17.174 2.91598C17.2835 3.10577 17.3928 3.44176 17.5021 3.9235C17.6114 4.40525 17.6819 4.93816 17.7129 5.52193C17.7908 6.58798 17.7908 7.50053 17.7129 8.25966C17.6347 9.0191 17.5608 9.61031 17.4903 10.0338C17.4198 10.4572 17.3145 10.8003 17.174 11.0631C17.0332 11.3259 16.9396 11.4865 16.8927 11.5448C16.8458 11.6031 16.8067 11.6399 16.7757 11.6543C16.5727 11.727 16.3616 11.764 16.143 11.764C15.9242 11.764 15.6588 11.6617 15.3464 11.4572C15.0342 11.2527 14.7101 10.9718 14.3742 10.614C14.0384 10.2561 13.6596 9.75606 13.2377 9.11369C12.8161 8.47131 12.3787 7.7121 11.9257 6.83606L11.5509 6.20074C11.3167 5.79203 10.9966 5.1969 10.5905 4.41591C10.1841 3.63461 9.82491 2.87885 9.51266 2.1488C9.38784 1.84218 9.20033 1.60875 8.95045 1.44812L8.83318 1.38222C8.75522 1.32392 8.63007 1.26202 8.4584 1.19605C8.28648 1.13015 8.10709 1.0829 7.91949 1.05382L1.49978 1.0974C0.843772 1.0974 0.398662 1.23632 0.16429 1.51378L0.0704921 1.64504C0.0236341 1.71814 0 1.8349 0 1.99561C0 2.15624 0.046858 2.35338 0.140656 2.58682C1.07782 4.64574 2.09696 6.6314 3.19808 8.54411C4.2992 10.4568 5.25605 11.9976 6.06807 13.1649C6.88024 14.3332 7.7081 15.4357 8.55162 16.4721C9.39515 17.5089 9.9535 18.1732 10.2267 18.4651C10.5002 18.7576 10.715 18.9762 10.8712 19.1222L11.4571 19.6477C11.8319 19.9982 12.3824 20.418 13.1087 20.907C13.8352 21.3963 14.6395 21.8781 15.5221 22.353C16.4047 22.8271 17.4316 23.2141 18.6032 23.5133C19.7746 23.8129 20.9148 23.9331 22.0239 23.8751H24.7184C25.2648 23.831 25.6788 23.6703 25.9602 23.3931L26.0534 23.2833C26.1161 23.1962 26.1748 23.0608 26.229 22.8786C26.2838 22.6961 26.311 22.4951 26.311 22.2764C26.295 21.6486 26.3462 21.0829 26.463 20.5792C26.5798 20.0757 26.7129 19.696 26.8618 19.4404C27.0105 19.1849 27.1784 18.9693 27.3653 18.7946C27.5526 18.6195 27.686 18.5134 27.7643 18.4769C27.8421 18.4401 27.9042 18.4152 27.9511 18.4002C28.3259 18.2835 28.7671 18.3965 29.2752 18.74C29.783 19.0831 30.2592 19.5068 30.7046 20.0103C31.1498 20.5143 31.6847 21.0797 32.3093 21.7075C32.9344 22.3354 33.481 22.8022 33.9494 23.1093L34.4178 23.3721C34.7306 23.5475 35.1368 23.7081 35.6367 23.8541C36.1357 24 36.5729 24.0365 36.9484 23.9635L42.9461 23.8761C43.5393 23.8761 44.0009 23.7843 44.3284 23.6021C44.6565 23.4196 44.8514 23.2185 44.9142 22.9998C44.9769 22.7809 44.9803 22.5325 44.9261 22.2548C44.8706 21.9778 44.8158 21.7841 44.7613 21.6746Z"
+								fill="white" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<!-- /.social list -->
+		</aside>
+
+		<div class="hero">
+			<div class="container">
+				<div class="hero__row row">
+					<div class="hero__column column">
+						<div class="hero__block">
+							<h1 class="hero__title title">Большой театр</h1>
+							<p class="hero__text">
+								Большо́й теа́тр — петербургский театр, существовавший в 1784—1886
+								годах, с 1886 года — Петербургская консерватория. Первое постоянное
+								в Санкт-Петербурге, крупнейшее в России и одно из крупнейших
+								театральных зданий в Европе XVIII.
+							</p>
+							<a class="hero__button button button--primary" href="#">афиша</a>
+						</div>
+						<!-- /.hero__block -->
+					</div>
+					<!-- /.hero__column -->
+					<div class="hero__column column">
+						<div class="hero-slider">
+							<div class="hero-slider-container swiper-container" id="hero-slider">
+								<ul class="swiper-wrapper">
+									<li class="hero-slider__item swiper-slide">
+										<picture>
+											<source srcset="img/Hero/Hero_slider-item.webp" type="image/webp">
+											<img src="img/Hero/Hero_slider-item.jpg" alt="" />
+										</picture>
+									</li>
+									<li class="hero-slider__item swiper-slide">
+										<picture>
+											<source srcset="img/Hero/Hero_slider-item.webp" type="image/webp">
+											<img src="img/Hero/Hero_slider-item.jpg" alt="" />
+										</picture>
+									</li> 
+									<li class="hero-slider__item swiper-slide">
+										<picture>
+											<source srcset="img/Hero/Hero_slider-item.webp" type="image/webp">
+											<img src="img/Hero/Hero_slider-item.jpg" alt="" />
+										</picture>
+									</li>
+								</ul>
+							</div>
+							<div class="swiper-button-prev">
+								<svg
+									class="arrow-icon"
+									width="41"
+									height="16"
+									viewBox="0 0 41 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M40.7071 8.70711C41.0976 8.31659 41.0976 7.68342 40.7071 7.2929L34.3431 0.928938C33.9526 0.538414 33.3195 0.538414 32.9289 0.928938C32.5384 1.31946 32.5384 1.95263 32.9289 2.34315L38.5858 8.00001L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM-1.74846e-07 9L40 9.00001L40 7.00001L1.74846e-07 7L-1.74846e-07 9Z"
+										fill="#ffffff" />
+								</svg>
+								Пред
+							</div>
+							<div class="swiper-button-next">
+								След
+								<svg
+									class="arrow-icon"
+									width="41"
+									height="16"
+									viewBox="0 0 41 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M40.7071 8.70711C41.0976 8.31659 41.0976 7.68342 40.7071 7.2929L34.3431 0.928938C33.9526 0.538414 33.3195 0.538414 32.9289 0.928938C32.5384 1.31946 32.5384 1.95263 32.9289 2.34315L38.5858 8.00001L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM-1.74846e-07 9L40 9.00001L40 7.00001L1.74846e-07 7L-1.74846e-07 9Z"
+										fill="#ffffff" />
+								</svg>
+							</div>
+						</div>
+						<!-- /.hero__media -->
+					</div>
+					<!-- /.hero__column -->
+				</div>
+				<!-- /.hero__row -->
+			</div>
+		</div>
+		<!-- /.hero -->
+		<main class="main">
+			<div class="container">
+				<section class="about">
+					<h2 class="about__title title"><span class="text--gold">О</span> театре</h2>
+					<div class="about__row row">
+						<div class="about__column column">
+							<h3 class="about__subtitle subtitle">Самый лучший театр СПБ</h3>
+							<div class="about__block">
+								<p class="about__text text">
+									Как свидетельствуют архивные документы, первое каменное здание
+									Большого театра начали возводить в 1775 году по проекту Антонио
+									Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог
+									лично наблюдать за ходом работ, Екатерина II поручила немецкому
+									театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать
+									новый проект театра, который и был воплощён архитекторами Ф. В. фон
+									Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя,
+									основываясь на других свидетельствах, годом открытия можно считать
+									1784 год.
+								</p>
+							</div>
+						</div>
+						<!-- /.about__column -->
+						<div class="about__column column">
+							<h3 class="about__subtitle subtitle">Немного о цифрах</h3>
+							<div class="about-numbers">
+								<div class="about-numbers__card">
+									<img src="img/Icons/Armchair-icon.svg" type="image/xml+svg" alt="" />
+									<p class="about-numbers__text"><span class="text--gold">1600</span> посадочных мест</p>
+								</div>
+								<div class="about-numbers__card">
+									<img src="img/Icons/Theatre-icon.svg" type="image/xml+svg" alt="" />
+									<p class="about-numbers__text"><span class="text--gold">350</span> лет истории</p>
+								</div>
+							</div>
+						</div>
+						<!-- /.about__column -->
+						<div class="about__column column">
+							<div class="about__image image-wrapper">
+								<picture>
+									<source srcset="img/Content/About-theatre.webp" type="image/webp">
+									<img src="img/Content/About-theatre.jpg" alt="" />
+								</picture>
+							</div>
+						</div>
+						<!-- /.about__column -->
+					</div>
+					<!-- /.about__row -->
+				</section>
+				<!-- /.about -->
+
+				<section class="projects">
+					<h2 class="projects__title title"><span class="text--gold">наши</span> постановки</h2>
+					<div class="projects-slider-container swiper-container" id="projects-slider">
+						<ul class="projects-slider swiper-wrapper">
+							<li class="projects__item ibg swiper-slide">
+								<picture>
+									<source srcset="img/Content/Project-item-1.webp" type="image/webp">
+									<img src="img/Content/Project-item-1.jpg" alt="" />
+								</picture>
+								<p class="item-name">Оскар 2020</p>
+								<p class="item-date">сентябрь 2020</p>
+								<a class="item-more" href="#">
+									<img src="img/Icons/Search-icon.svg" type="image/xml+svg" alt="more" />
+								</a>
+							</li>
+							<li class="projects__item ibg swiper-slide">
+								<picture>
+									<source srcset="img/Content/Project-item-2.webp" type="image/webp">
+									<img src="img/Content/Project-item-2.jpg" alt="" />
+								</picture>
+								<p class="item-name">Ла Скала</p>
+								<p class="item-date">август 2020</p>
+								<a class="item-more" href="#">
+									<img src="img/Icons/Search-icon.svg" type="image/xml+svg" alt="more" />
+								</a>
+							</li>
+							<li class="projects__item ibg swiper-slide">
+								<picture>
+									<source srcset="img/Content/Project-item-3.webp" type="image/webp">
+									<img src="img/Content/Project-item-3.jpg" alt="" />
+								</picture>
+								<p class="item-name">Золотой грамофон</p>
+								<p class="item-date">июнь 2020</p>
+								<a class="item-more" href="#">
+									<img src="img/Icons/Search-icon.svg" type="image/xml+svg" alt="more" />
+								</a>
+							</li>
+							<li class="projects__item ibg swiper-slide">
+								<picture>
+									<source srcset="img/Content/Project-item-4.webp" type="image/webp">
+									<img src="img/Content/Project-item-4.jpg" alt="" />
+								</picture>
+								<p class="item-name">Щелкунчик</p>
+								<p class="item-date">май 2020</p>
+								<a class="item-more" href="#">
+									<img src="img/Icons/Search-icon.svg" type="image/xml+svg" alt="more" />
+								</a>
+							</li>
+						</ul>
+						<div class="swiper-scrollbar"></div>
+					</div>
+				</section>
+				<!-- /.projects -->
+				
+				<section class="rating">
+					<div class="rating__row row">
+						<div class="rating__column">
+							<ul class="rating-list">
+								<li class="rating-list__item">
+									<p class="rating-date">2018</p>
+								</li>
+								<li class="rating-list__item">
+									<p class="rating-date">2019</p>
+								</li>
+								<li class="rating-list__item">
+									<p class="rating-date">2020</p>
+								</li>
+							</ul>
+						</div>
+						<div class="rating__column">
+							<div class="rating-stars">
+								<img src="img/Icons/Star-icon.svg" type="image/xml+svg" alt="" />
+								<img src="img/Icons/Star-icon.svg" type="image/xml+svg" alt="" />
+								<img src="img/Icons/Star-icon.svg" type="image/xml+svg" alt="" />
+								<img src="img/Icons/Star-icon.svg" type="image/xml+svg" alt="" />
+								<img src="img/Icons/Star-icon.svg" type="image/xml+svg" alt="" />
+							</div>
+							<p class="rating__text">Лучший театр
+								по мнению театральных критиков Парижа</p>
+						</div>
+					</div>
+				</section>
+				<!-- /.rating -->
+
+				<section class="partners">
+					<h2 class="partners__title title"><span class="text--gold">Партнеры</span> театра</h2>
+					<div class="partners__block">
+						<a href="#">
+							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="" />
+						</a>
+						<a href="#">
+							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="" />
+						</a>
+						<a href="#">
+							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="" />
+						</a>
+						<a href="#">
+							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="" />
+						</a>
+						<a href="#">
+							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="" />
+						</a>
+						<a href="#">
+							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="" />
+						</a>
+						<a href="#">
+							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="" />
+						</a>
+						<a href="#">
+							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="" />
+						</a>
+					</div>
+				</section>
+				<!-- /.partners -->
+				
+				<section class="contacts">
+					<h2 class="contacts__title title">
+						<span class="text--gold">стать</span> меценатом
+					</h2>
+					<form class="form" action="/action_page">
+						<div class="form__row row">
+							<div class="form__column column">
+								<label class="form__label" for="name">Имя</label>
+								<input
+									class="form__input"
+									type="text"
+									id="name"
+									name="name"
+									placeholder="Имя" />
+								<label class="form__label" for="tel">Телефон</label>
+								<input
+									class="form__input"
+									type="tel"
+									id="tel"
+									name="tel"
+									placeholder="Телефон" />
+							</div>
+							<div class="form__column column">
+								<label class="form__label" for="company">Компания</label>
+								<input
+									class="form__input"
+									type="text"
+									id="company"
+									name="company"
+									placeholder="Компания" />
+								<label class="form__label" for="email">E-mail</label>
+								<input
+									class="form__input"
+									type="email"
+									id="email"
+									name="email"
+									placeholder="E-mail" />
+							</div>
+							<div class="form__column column">
+								<label class="form__label" for="message">Сообщение</label>
+								<textarea
+									class="form__textarea"
+									id="message"
+									name="message"
+									value=""
+									placeholder="Сообщение">
+								</textarea>
+							</div>
+						</div>
+						<input
+							class="form__button button--primary button"
+							type="submit"
+							value="Отправить" />
+						<p class="privacy-policy">
+							* Ваши данные не будут переданы третьим лицам, 100% вероятность.
+							Конфиденциальность мы гарантируем, и защищаем персональные данные согласно
+							законку ФЗ-52.
+						</p>
+					</form>
+					<!-- /.form -->
+					<div class="contacts__block">
+						<div class="contacts--tel">
+							<a class="link" href="tel:...">+7 (812) 123-45-55</a>
+							<a class="link" href="tel:...">+7 (812) 123-45-55</a>
+						</div>
+						<div class="contacts--mail">
+							<a class="link" href="mailto:...">info@theater.ru</a>
+							<a class="link" href="#">г. санкт-петербург, невский 140</a>
+						</div>
+					</div>
+					<!-- /.contact-block -->
+				</section>
+				<!-- /.contacts -->
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-wrap">
+					<p class="copyright">&#169; Все права защищены. Большой театр. 2020</p>
+					<p class="authorship">Разработано d-e-n.ru</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="lib/Swiper/swiper.min.js"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>
