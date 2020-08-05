@@ -19,7 +19,7 @@
 		<link
 			type="text/css"
 			rel="stylesheet"
-			href="lib/Swiper/swiper.min.css"
+			href="lib/swiper/swiper.min.css"
 		/>
 
 		<!-- Normalize -->
@@ -29,7 +29,7 @@
 		
 		<!-- Reset -->
 		<style type="text/css">
-			/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 | License: none (public domain) */a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}a{text-decoration:none}b,strong{font-weight:900}
+			/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 | License: none (public domain) */a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}a{text-decoration:none}a:hover{text-decoration:underline}b,strong{font-weight:900}
 		</style>
 		
 		<!-- Fonts -->
@@ -52,7 +52,7 @@
 
 		<!-- Critical CSS -->
 		<style>
-			*,::before,::after{-webkit-box-sizing:border-box;box-sizing:border-box}body{font-family:Open Sans Condensed;color:#fff}body.lock{overflow:hidden}.image-wrapper{display:block}.image-wrapper img,.image-wrapper picture{width:100%}.ibg{background-position:center;background-size:cover;background-repeat:no-repeat;position:relative}.ibg>img{width:0;height:0;position:absolute;top:0;left:0;opacity:0;visibility:hidden}.container{width:100%;padding:0 32px;overflow:hidden}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap}.column{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%}.button{-ms-flex-negative:0;flex-shrink:0;display:inline-block;padding:0;border:none;background-color:unset;font-style:normal;font-weight:700;cursor:pointer}.button--primary{padding:15px 47px;color:#fff;background-color:#d1a954;font-size:18px;line-height:25px;text-align:center;letter-spacing:.1em;text-transform:uppercase;-webkit-transition:background-color .3s linear;-o-transition:background-color .3s linear;transition:background-color .3s linear}.button--primary:hover{background-color:#9e7b2e}.button--burger-menu{width:40px;height:40px;position:relative;z-index:1}.button--burger-menu span,.button--burger-menu::after,.button--burger-menu::before{width:26.6px;height:3px;background-color:#fff;position:absolute;left:6.6px;-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;-webkit-transition:-webkit-transform .2s ease;transition:-webkit-transform .2s ease;-o-transition:transform .2s ease;transition:transform .2s ease;transition:transform .2s ease,-webkit-transform .2s ease}.button--burger-menu::after,.button--burger-menu::before{content:"";display:block}.button--burger-menu::before{top:10px}.button--burger-menu span{top:18px;-webkit-transform:scaleX(.77);-ms-transform:scaleX(.77);transform:scaleX(.77)}.button--burger-menu::after{top:27px;-webkit-transform:scaleX(.54);-ms-transform:scaleX(.54);transform:scaleX(.54)}.button--burger-menu:hover span,.button--burger-menu:hover::after{-webkit-transform:scaleX(.99);-ms-transform:scaleX(.99);transform:scaleX(.99)}.button--sidebar-close{width:30px;height:30px;position:absolute;top:30px;right:30px}.button--sidebar-close::after,.button--sidebar-close::before{content:"";display:block;width:16px;height:2px;background-color:#fff;position:absolute;top:8px;left:8px}.button--sidebar-close::before{-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.button--sidebar-close::after{-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}.link{display:inline-block;color:#fff;font-weight:700;font-size:16px;line-height:22px;letter-spacing:.05em;text-transform:uppercase}.link--underlined{position:relative}.link--underlined::after{content:'';display:block;width:100%;height:3px;position:absolute;bottom:-5px;background-color:#d1a954;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);-webkit-transition:-webkit-transform .3s linear;transition:-webkit-transform .3s linear;-o-transition:transform .3s linear;transition:transform .3s linear;transition:transform .3s linear,-webkit-transform .3s linear;z-index:-1}.link--underlined:hover::after{-webkit-transform:translateY(-6px);-ms-transform:translateY(-6px);transform:translateY(-6px)}.subtitle,.title{letter-spacing:.1em;text-transform:uppercase}.title{margin-bottom:60px;font-weight:300;font-size:48px;line-height:65px}.subtitle{margin-bottom:40px;font-weight:700;font-size:21px;line-height:29px}.text{font-size:16px;line-height:22px;color:#fff}.text--gold{color:#d1a954}.header{padding-top:50px;position:fixed;z-index:1;background-color:transparent}.nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.sidebar-menu{height:100vh;width:100%;padding:30px 30px 0 40px;max-width:300px;position:fixed;top:0;left:0;background-color:#333;-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:-webkit-transform .2s ease;transition:-webkit-transform .2s ease;-o-transition:transform .2s ease;transition:transform .2s ease;transition:transform .2s ease,-webkit-transform .2s ease;overflow:hidden;z-index:2}.sidebar-menu.show{overflow-y:auto;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}.hero{padding-top:197px;padding-bottom:107px;position:relative;overflow:hidden}.hero__row{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.hero__title{font-weight:700;font-size:52px;line-height:75px;word-wrap:break-word;margin-bottom:50px}.hero__text{font-size:18px;line-height:22px;letter-spacing:.05em;margin-bottom:50px}.hero::before{content:"";display:block;width:100%;height:100%;position:absolute;top:0;left:0;background:-webkit-gradient(linear,left top,left bottom,from(rgba(51,51,51,.85))),url(img/Hero/Hero_back.jpg) top center/cover no-repeat;background:-o-linear-gradient(rgba(51,51,51,.85)),url(img/Hero/Hero_back.jpg) top center/cover no-repeat;background:linear-gradient(rgba(51,51,51,.85)),url(img/Hero/Hero_back.jpg) top center/cover no-repeat;z-index:-1}.main{background-color:#333;overflow:hidden}.social{width:140px;height:126px;margin:0 auto 140px auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-line-pack:justify;align-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap;text-align:center}.social-item{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%}.social-link:hover .social-icon path{fill:#d1a954}
+			*,::before,::after{-webkit-box-sizing:border-box;box-sizing:border-box}body{font-family:Open Sans Condensed;color:#fff}body.lock{overflow:hidden}.image-wrapper{display:block}.image-wrapper img,.image-wrapper picture{width:100%}.ibg{background-position:center;background-size:cover;background-repeat:no-repeat;position:relative}.ibg>img{width:0;height:0;position:absolute;top:0;left:0;opacity:0;visibility:hidden}.container{width:100%;padding:0 32px;overflow:hidden}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap}.column{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%}.button{-ms-flex-negative:0;flex-shrink:0;display:inline-block;padding:0;border:none;background-color:unset;font-style:normal;font-weight:700;cursor:pointer}.button--primary{padding:15px 47px;color:#fff;background-color:#d1a954;font-size:18px;line-height:25px;text-align:center;letter-spacing:.1em;text-transform:uppercase;-webkit-transition:background-color .3s linear;-o-transition:background-color .3s linear;transition:background-color .3s linear}.button--primary:hover{background-color:#9e7b2e}.button--burger-menu{width:40px;height:40px;position:relative;z-index:1}.button--burger-menu span,.button--burger-menu::after,.button--burger-menu::before{width:26.6px;height:3px;background-color:#fff;position:absolute;left:6.6px;-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;-webkit-transition:-webkit-transform .2s ease;transition:-webkit-transform .2s ease;-o-transition:transform .2s ease;transition:transform .2s ease;transition:transform .2s ease,-webkit-transform .2s ease}.button--burger-menu::after,.button--burger-menu::before{content:"";display:block}.button--burger-menu::before{top:10px}.button--burger-menu span{top:18px;-webkit-transform:scaleX(.77);-ms-transform:scaleX(.77);transform:scaleX(.77)}.button--burger-menu::after{top:27px;-webkit-transform:scaleX(.54);-ms-transform:scaleX(.54);transform:scaleX(.54)}.button--burger-menu:hover span,.button--burger-menu:hover::after{-webkit-transform:scaleX(.99);-ms-transform:scaleX(.99);transform:scaleX(.99)}.button--sidebar-close{width:30px;height:30px;position:absolute;top:30px;right:30px}.button--sidebar-close::after,.button--sidebar-close::before{content:"";display:block;width:16px;height:2px;background-color:#fff;position:absolute;top:8px;left:8px}.button--sidebar-close::before{-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.button--sidebar-close::after{-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}.link{display:inline-block;color:#fff;font-weight:700;font-size:16px;line-height:22px;letter-spacing:.05em;text-transform:uppercase}.link--underlined{position:relative}.link--underlined:hover{text-decoration:none}.link--underlined::after{content:'';display:block;width:100%;height:3px;position:absolute;bottom:-5px;background-color:#d1a954;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);-webkit-transition:-webkit-transform .3s linear;transition:-webkit-transform .3s linear;-o-transition:transform .3s linear;transition:transform .3s linear;transition:transform .3s linear,-webkit-transform .3s linear;z-index:-1}.link--underlined:hover::after{-webkit-transform:translateY(-6px);-ms-transform:translateY(-6px);transform:translateY(-6px)}.subtitle,.title{letter-spacing:.1em;text-transform:uppercase}.title{margin-bottom:60px;font-weight:300;font-size:48px;line-height:65px}.subtitle{margin-bottom:40px;font-weight:700;font-size:21px;line-height:29px}.text{font-size:16px;line-height:22px;color:#fff}.text--gold{color:#d1a954}.header{padding-top:50px;position:fixed;z-index:1;background-color:transparent}.nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.sidebar-menu{height:100vh;width:100%;padding:30px 30px 0 40px;max-width:300px;position:fixed;top:0;left:0;background-color:#333;-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:-webkit-transform .2s ease;transition:-webkit-transform .2s ease;-o-transition:transform .2s ease;transition:transform .2s ease;transition:transform .2s ease,-webkit-transform .2s ease;overflow:hidden;z-index:2}.sidebar-menu.show{overflow-y:auto;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}.hero{padding-top:197px;padding-bottom:107px;position:relative;overflow:hidden}.hero__row{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.hero__title{font-weight:700;font-size:52px;line-height:75px;word-wrap:break-word;margin-bottom:50px}.hero__text{font-size:18px;line-height:22px;letter-spacing:.05em;margin-bottom:50px}.hero::before{content:"";display:block;width:100%;height:100%;position:absolute;top:0;left:0;background:-webkit-gradient(linear,left top,left bottom,from(rgba(51,51,51,.85))),url(img/hero/hero_back.jpg) top center/cover no-repeat;background:-o-linear-gradient(rgba(51,51,51,.85)),url(img/hero/hero_back.jpg) top center/cover no-repeat;background:linear-gradient(rgba(51,51,51,.85)),url(img/hero/hero_back.jpg) top center/cover no-repeat;z-index:-1}.main{background-color:#333;overflow:hidden}.social{width:140px;height:126px;margin:0 auto 140px auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-line-pack:justify;align-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap;text-align:center}.social-item{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%}.social-link:hover .social-icon path{fill:#d1a954}
 		</style>
 
 		<style media="screen and (min-width: 577px)">
@@ -219,20 +219,20 @@
 								<ul class="swiper-wrapper">
 									<li class="hero-slider__item swiper-slide">
 										<picture>
-											<source srcset="img/Hero/Hero_slider-item.webp" type="image/webp">
-											<img src="img/Hero/Hero_slider-item.jpg" alt="" />
+											<source srcset="img/hero/hero_slider-item.webp" type="image/webp">
+											<img src="img/hero/hero_slider-item.jpg" alt="" />
 										</picture>
 									</li>
 									<li class="hero-slider__item swiper-slide">
 										<picture>
-											<source srcset="img/Hero/Hero_slider-item.webp" type="image/webp">
-											<img src="img/Hero/Hero_slider-item.jpg" alt="" />
+											<source srcset="img/hero/hero_slider-item.webp" type="image/webp">
+											<img src="img/hero/hero_slider-item.jpg" alt="" />
 										</picture>
 									</li> 
 									<li class="hero-slider__item swiper-slide">
 										<picture>
-											<source srcset="img/Hero/Hero_slider-item.webp" type="image/webp">
-											<img src="img/Hero/Hero_slider-item.jpg" alt="" />
+											<source srcset="img/hero/hero_slider-item.webp" type="image/webp">
+											<img src="img/hero/hero_slider-item.jpg" alt="" />
 										</picture>
 									</li>
 								</ul>
@@ -298,11 +298,11 @@
 							<h3 class="about__subtitle subtitle">Немного о цифрах</h3>
 							<div class="about-numbers">
 								<div class="about-numbers__card">
-									<img src="img/Icons/Armchair-icon.svg" type="image/xml+svg" alt="" />
+									<img src="img/icons/armchair-icon.svg" type="image/xml+svg" alt="" />
 									<p class="about-numbers__text"><span class="text--gold">1600</span> посадочных мест</p>
 								</div>
 								<div class="about-numbers__card">
-									<img src="img/Icons/Theatre-icon.svg" type="image/xml+svg" alt="" />
+									<img src="img/icons/theatre-icon.svg" type="image/xml+svg" alt="" />
 									<p class="about-numbers__text"><span class="text--gold">350</span> лет истории</p>
 								</div>
 							</div>
@@ -311,8 +311,8 @@
 						<div class="about__column column">
 							<div class="about__image image-wrapper">
 								<picture>
-									<source srcset="img/Content/About-theatre.webp" type="image/webp">
-									<img src="img/Content/About-theatre.jpg" alt="" />
+									<source srcset="img/content/about-theatre.webp" type="image/webp">
+									<img src="img/content/about-theatre.jpg" alt="" />
 								</picture>
 							</div>
 						</div>
@@ -328,46 +328,46 @@
 						<ul class="projects-slider swiper-wrapper">
 							<li class="projects__item ibg swiper-slide">
 								<picture>
-									<source srcset="img/Content/Project-item-1.webp" type="image/webp">
-									<img src="img/Content/Project-item-1.jpg" alt="" />
+									<source srcset="img/content/project-item-1.webp" type="image/webp">
+									<img src="img/content/project-item-1.jpg" alt="" />
 								</picture>
 								<p class="item-name">Оскар 2020</p>
 								<p class="item-date">сентябрь 2020</p>
 								<a class="item-more" href="#">
-									<img src="img/Icons/Search-icon.svg" type="image/xml+svg" alt="more" />
+									<img src="img/icons/search-icon.svg" type="image/xml+svg" alt="more" />
 								</a>
 							</li>
 							<li class="projects__item ibg swiper-slide">
 								<picture>
-									<source srcset="img/Content/Project-item-2.webp" type="image/webp">
-									<img src="img/Content/Project-item-2.jpg" alt="" />
+									<source srcset="img/content/project-item-2.webp" type="image/webp">
+									<img src="img/content/project-item-2.jpg" alt="" />
 								</picture>
 								<p class="item-name">Ла Скала</p>
 								<p class="item-date">август 2020</p>
 								<a class="item-more" href="#">
-									<img src="img/Icons/Search-icon.svg" type="image/xml+svg" alt="more" />
+									<img src="img/icons/search-icon.svg" type="image/xml+svg" alt="more" />
 								</a>
 							</li>
 							<li class="projects__item ibg swiper-slide">
 								<picture>
-									<source srcset="img/Content/Project-item-3.webp" type="image/webp">
-									<img src="img/Content/Project-item-3.jpg" alt="" />
+									<source srcset="img/content/project-item-3.webp" type="image/webp">
+									<img src="img/content/project-item-3.jpg" alt="" />
 								</picture>
 								<p class="item-name">Золотой грамофон</p>
 								<p class="item-date">июнь 2020</p>
 								<a class="item-more" href="#">
-									<img src="img/Icons/Search-icon.svg" type="image/xml+svg" alt="more" />
+									<img src="img/icons/search-icon.svg" type="image/xml+svg" alt="more" />
 								</a>
 							</li>
 							<li class="projects__item ibg swiper-slide">
 								<picture>
-									<source srcset="img/Content/Project-item-4.webp" type="image/webp">
-									<img src="img/Content/Project-item-4.jpg" alt="" />
+									<source srcset="img/content/project-item-4.webp" type="image/webp">
+									<img src="img/content/project-item-4.jpg" alt="" />
 								</picture>
 								<p class="item-name">Щелкунчик</p>
 								<p class="item-date">май 2020</p>
 								<a class="item-more" href="#">
-									<img src="img/Icons/Search-icon.svg" type="image/xml+svg" alt="more" />
+									<img src="img/icons/search-icon.svg" type="image/xml+svg" alt="more" />
 								</a>
 							</li>
 						</ul>
@@ -393,11 +393,11 @@
 						</div>
 						<div class="rating__column">
 							<div class="rating-stars">
-								<img src="img/Icons/Star-icon.svg" type="image/xml+svg" alt="" />
-								<img src="img/Icons/Star-icon.svg" type="image/xml+svg" alt="" />
-								<img src="img/Icons/Star-icon.svg" type="image/xml+svg" alt="" />
-								<img src="img/Icons/Star-icon.svg" type="image/xml+svg" alt="" />
-								<img src="img/Icons/Star-icon.svg" type="image/xml+svg" alt="" />
+								<img src="img/icons/star-icon.svg" type="image/xml+svg" alt="" />
+								<img src="img/icons/star-icon.svg" type="image/xml+svg" alt="" />
+								<img src="img/icons/star-icon.svg" type="image/xml+svg" alt="" />
+								<img src="img/icons/star-icon.svg" type="image/xml+svg" alt="" />
+								<img src="img/icons/star-icon.svg" type="image/xml+svg" alt="" />
 							</div>
 							<p class="rating__text">Лучший театр
 								по мнению театральных критиков Парижа</p>
@@ -410,28 +410,28 @@
 					<h2 class="partners__title title"><span class="text--gold">Партнеры</span> театра</h2>
 					<div class="partners__block">
 						<a href="#">
-							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
+							<img class="partners__img" src="img/icons/gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
 						</a>
 						<a href="#">
-							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
+							<img class="partners__img" src="img/icons/gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
 						</a>
 						<a href="#">
-							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
+							<img class="partners__img" src="img/icons/gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
 						</a>
 						<a href="#">
-							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
+							<img class="partners__img" src="img/icons/gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
 						</a>
 						<a href="#">
-							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
+							<img class="partners__img" src="img/icons/gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
 						</a>
 						<a href="#">
-							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
+							<img class="partners__img" src="img/icons/gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
 						</a>
 						<a href="#">
-							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
+							<img class="partners__img" src="img/icons/gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
 						</a>
 						<a href="#">
-							<img class="partners__img" src="img/Icons/Gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
+							<img class="partners__img" src="img/icons/gazprom-logo.svg" type="image/xml+svg" alt="Gazprom" />
 						</a>
 					</div>
 				</section>
@@ -522,7 +522,7 @@
 			</div>
 		</footer>
 
-		<script src="lib/Swiper/swiper.min.js"></script>
+		<script src="lib/swiper/swiper.min.js"></script>
 		<script src="js/script.min.js"></script>
 	</body>
 </html>
