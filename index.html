@@ -21,6 +21,12 @@
 			rel="stylesheet"
 			href="lib/swiper/swiper.min.css"
 		/>
+		
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="lib/tiny_slider/tiny-slider.css"
+		/>
 
 		<!-- Normalize -->
 		<style type="text/css">
@@ -313,9 +319,9 @@
 
 				<section class="projects">
 					<h2 class="projects__title title"><span class="text--gold">наши</span> постановки</h2>
-					<div class="projects-slider-container swiper-container" id="projects-slider">
-						<ul class="projects-slider swiper-wrapper">
-							<li class="projects__item ibg swiper-slide">
+					<div class="projects-slider-container">
+						<ul class="projects-slider">
+							<li class="projects__item ibg">
 								<picture>
 									<source srcset="img/content/project-item-1.webp" type="image/webp">
 									<img src="img/content/project-item-1.jpg" alt="" />
@@ -326,7 +332,7 @@
 									<img src="img/icons/search-icon.svg" type="image/xml+svg" alt="more" />
 								</a>
 							</li>
-							<li class="projects__item ibg swiper-slide">
+							<li class="projects__item ibg">
 								<picture>
 									<source srcset="img/content/project-item-2.webp" type="image/webp">
 									<img src="img/content/project-item-2.jpg" alt="" />
@@ -337,7 +343,7 @@
 									<img src="img/icons/search-icon.svg" type="image/xml+svg" alt="more" />
 								</a>
 							</li>
-							<li class="projects__item ibg swiper-slide">
+							<li class="projects__item ibg">
 								<picture>
 									<source srcset="img/content/project-item-3.webp" type="image/webp">
 									<img src="img/content/project-item-3.jpg" alt="" />
@@ -348,7 +354,7 @@
 									<img src="img/icons/search-icon.svg" type="image/xml+svg" alt="more" />
 								</a>
 							</li>
-							<li class="projects__item ibg swiper-slide">
+							<li class="projects__item ibg">
 								<picture>
 									<source srcset="img/content/project-item-4.webp" type="image/webp">
 									<img src="img/content/project-item-4.jpg" alt="" />
@@ -360,7 +366,6 @@
 								</a>
 							</li>
 						</ul>
-						<div class="swiper-scrollbar"></div>
 					</div>
 				</section>
 				<!-- /.projects -->
@@ -511,7 +516,8 @@
 			</div>
 		</footer>
 
-		<script src="lib/swiper/swiper.min.js" defer></script>
+		<script src="lib/tiny_slider/tiny-slider.js"></script>
+		<script src="lib/swiper/swiper.min.js"></script>
 		<script src="js/script.min.js"></script>
 	</body>
 </html>
