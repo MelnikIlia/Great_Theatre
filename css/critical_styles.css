@@ -241,8 +241,8 @@ body.lock {
   height: 100vh;
   width: 100%;
   padding: 30px 30px 0 40px;
-  max-width: 300px;
-  position: absolute;
+  max-width: 200px;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #333;
@@ -258,7 +258,6 @@ body.lock {
   z-index: 2;
 }
 .sidebar-menu.show {
-  overflow-y: auto;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
