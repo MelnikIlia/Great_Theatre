@@ -301,11 +301,11 @@ body.lock {
       left bottom,
       from(rgba(51, 51, 51, 0.85))
     ),
-    url(img/hero/hero_back.jpg) top center/cover no-repeat;
+    url(../img/hero/hero_back.jpg) top center/cover no-repeat;
   background: -o-linear-gradient(rgba(51, 51, 51, 0.85)),
-    url(img/hero/hero_back.jpg) top center/cover no-repeat;
+    url(../img/hero/hero_back.jpg) top center/cover no-repeat;
   background: linear-gradient(rgba(51, 51, 51, 0.85)),
-    url(img/hero/hero_back.jpg) top center/cover no-repeat;
+    url(../img/hero/hero_back.jpg) top center/cover no-repeat;
   z-index: -1;
 }
 .main {
